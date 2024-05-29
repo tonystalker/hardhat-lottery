@@ -24,6 +24,13 @@ module.exports = {
             blockConfirmations: 6,
         },
     },
+    gasReporter: {
+        enabled: REPORT_GAS,
+        currency: "USD",
+        outputFile: "gas-report.txt",
+        noColors: true,
+        // coinmarketcap: process.env.COINMARKETCAP_API_KEY,
+    },
 
     solidity: "0.8.24",
     namedAccounts: {
